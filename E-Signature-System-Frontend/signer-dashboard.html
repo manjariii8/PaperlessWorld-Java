@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Signer Dashboard - E-Signature System</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header"><h1>E-Signature System — Signer</h1></header>
+  <main class="container">
+    <h2>Signer Dashboard</h2>
+
+    <section class="panel">
+      <h3>Upload Document</h3>
+      <form id="uploadForm">
+        <label>Filename<input id="filename" type="text" placeholder="sample.pdf" required></label>
+        <button class="btn" type="submit">Upload (demo)</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h3>Your Documents</h3>
+      <table id="docsTable" class="table">
+        <thead><tr><th>ID</th><th>Filename</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

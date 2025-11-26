@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reviewer Dashboard - E-Signature System</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header"><h1>E-Signature System — Reviewer</h1></header>
+  <main class="container">
+    <h2>Reviewer Dashboard</h2>
+
+    <section class="panel">
+      <h3>Pending Signatures</h3>
+      <ul id="pendingList" class="list"></ul>
+    </section>
+
+    <section class="panel">
+      <h3>Verify Signature</h3>
+      <label>Signature ID<input id="verifyId" type="number"></label>
+      <button class="btn" id="verifyBtn">Verify</button>
+      <p id="verifyResult" class="note"></p>
+    </section>
+  </main>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

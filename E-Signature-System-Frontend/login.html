@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login - E-Signature System</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header"><h1>E-Signature System</h1></header>
+  <main class="container small">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label>Username<input type="text" id="username" required></label>
+      <label>Password<input type="password" id="password" required></label>
+      <label>Role
+        <select id="role">
+          <option value="SIGNER">Signer</option>
+          <option value="REVIEWER">Reviewer</option>
+          <option value="ADMIN">Admin</option>
+        </select>
+      </label>
+      <button type="submit" class="btn">Login (demo)</button>
+    </form>
+    <p class="note">This is a static demo. Login routes to dashboards locally.</p>
+  </main>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const role = document.getElementById('role').value;
+  if(role==='ADMIN') location.href='admin-dashboard.html';
+  else if(role==='SIGNER') location.href='signer-dashboard.html';
+  else location.href='reviewer-dashboard.html';
+});
+</script>
+</body>
+</html>

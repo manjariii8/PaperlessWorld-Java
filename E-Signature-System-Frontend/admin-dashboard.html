@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin Dashboard - E-Signature System</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header"><h1>E-Signature System — Admin</h1></header>
+  <main class="container">
+    <h2>Admin Dashboard</h2>
+    <section class="panel">
+      <h3>User Management</h3>
+      <p>Use this panel to add or remove users (demo UI).</p>
+      <form id="addUserForm" class="form-inline">
+        <input id="u_name" placeholder="Username" required>
+        <input id="u_pass" placeholder="Password" required>
+        <select id="u_role"><option>ADMIN</option><option>SIGNER</option><option>REVIEWER</option></select>
+        <button class="btn" type="submit">Add User</button>
+      </form>
+      <ul id="usersList" class="list"></ul>
+    </section>
+
+    <section class="panel">
+      <h3>System Status</h3>
+      <p>Documents: <span id="docCount">0</span></p>
+      <p>Signatures: <span id="sigCount">0</span></p>
+    </section>
+  </main>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
